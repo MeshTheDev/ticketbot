@@ -42,8 +42,8 @@ module.exports = {
         )
     // Replace {ROLE ID HERE} with the role ID for the roles you want to give the channel access to. 
     // You can copy and paste this line of code multiple times for multiple roles.
-    // The default permissions set by me is that they are able to read and send messages and view the channel. Please refer to the discordjs documentation
-    // under the 'permissions' section to view more addable permissions.   
+    // The default permissions set by me is that they are able to read and send messages and view the channel.
+    // Please refer to the discordjs documentationunder the 'permissions' section to view more addable permissions.   
     
         
     const filter = (reaction, user) => {
