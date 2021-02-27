@@ -21,8 +21,6 @@ module.exports = {
        return
     }
 
-
-
     let name = message.author.username;
     const createdchannel = await message.guild.channels.create( `${name}-ticket`, {
         type: 'text',
