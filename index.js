@@ -14,15 +14,7 @@ const {
 } = require('./config.json');
 
 client.once('ready', () => {
-    console.log('---GENERAL INFORMATION---');
-    console.log('--PREFIX--');
-    console.log(prefix);
-    console.log('--TOKEN--');
-    console.log(token);
-    console.log('--BOTNAME--');
-    console.log(bot_info.name);
-    console.log('--BOTVERSION');
-    console.log(bot_info.version);
+console.log('The bot is ready!')
 });
 
 
