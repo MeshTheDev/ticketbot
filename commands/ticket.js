@@ -13,13 +13,14 @@ module.exports = {
 
 
 
-    if(!message.member.roles.cache.has(ticketstaffID)) { // if a user does not have the role of {roleid}, the command will not run and message will be deleted
-        let msg = await message.channel.send('You do not have a valid ticket staff role!')
-        setTimeout(function(){
-            msg.delete()    
-       }, 5000);
-       return
-    }
+//     if(!message.member.roles.cache.has(ticketstaffID)) { // if a user does not have the role of {roleid}, the command will not run and message will be deleted
+//         let msg = await message.channel.send('You do not have a valid ticket staff role!')
+//         setTimeout(function(){
+//             msg.delete()    
+//        }, 5000);
+//        return
+//     }
+// OPTIONAL CODE: IF YOU WANT TO LIMIT THE PEOPLE WHO CAN CREATE CHANNELS, UN-COMMENT THESE CODE
 
     let name = message.author.username;
     const createdchannel = await message.guild.channels.create( `${name}-ticket`, {
@@ -36,6 +37,7 @@ module.exports = {
 
     .then( 
         createdchannel.updateOverwrite( `${author.id}`, {READ_MESSAGES: true, SEND_MESSAGES: true, VIEW_CHANNEL: true}),  
+        createdchannel.updateOverwrite( `${ticketcatID}`, {READ_MESSAGES: true, SEND_MESSAGES: true, VIEW_CHANNEL: true}), 
         createdchannel.updateOverwrite( `{ROLE ID HERE}`, {READ_MESSAGES: true, SEND_MESSAGES: true, VIEW_CHANNEL: true}), 
         )
     // Replace {ROLE ID HERE} with the role ID for the roles you want to give the channel access to. 
