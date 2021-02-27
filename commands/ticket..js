@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 module.exports = {
-    name: 'training',     
+    name: 'ticket',     
     async execute(message) {
 
     message.delete() 
@@ -38,7 +38,7 @@ module.exports = {
 
     .then( 
         createdchannel.updateOverwrite( `${author.id}`, {READ_MESSAGES: true, SEND_MESSAGES: true, VIEW_CHANNEL: true}),  
-        createdchannel.updateOverwrite( ``, {READ_MESSAGES: true, SEND_MESSAGES: true, VIEW_CHANNEL: true}), //ADD ROLE ID TO ACCESS CHANNEL HERE (add multiple if necessary)
+        createdchannel.updateOverwrite( `{ROLE ID HERE}`, {READ_MESSAGES: true, SEND_MESSAGES: true, VIEW_CHANNEL: true}), //ADD ROLE ID TO ACCESS CHANNEL HERE (add multiple if necessary)
         )
 
     
