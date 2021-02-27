@@ -1,4 +1,10 @@
 # ticketbot
 A simple ticket bot for Discord, written in DiscordJS.
 
+Instructions:
+1. Paste bot token inside config.json under "token".
+2. Set your prefix by indicating a prefix inside config.json under "prefix"
+3. Add your desired ID of your designated ticket staff role in the const "ticketstaffID"
+4. Add your desired category you want the tickets to be in in the const "ticketcatID"
+
 Feel free to use this code for your own projects, and suggest any changes!
