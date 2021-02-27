@@ -38,9 +38,12 @@ module.exports = {
 
     .then( 
         createdchannel.updateOverwrite( `${author.id}`, {READ_MESSAGES: true, SEND_MESSAGES: true, VIEW_CHANNEL: true}),  
-        createdchannel.updateOverwrite( `{ROLE ID HERE}`, {READ_MESSAGES: true, SEND_MESSAGES: true, VIEW_CHANNEL: true}), //ADD ROLE ID TO ACCESS CHANNEL HERE (add multiple if necessary)
+        createdchannel.updateOverwrite( `{ROLE ID HERE}`, {READ_MESSAGES: true, SEND_MESSAGES: true, VIEW_CHANNEL: true}), 
         )
-
+    // Replace {ROLE ID HERE} with the role ID for the roles you want to give the channel access to. 
+    // You can copy and paste this line of code multiple times for multiple roles.
+    // The default permissions set by me is that they are able to read and send messages and view the channel. Please refer to the discordjs documentation
+    // under the 'permissions' section to view more addable permissions.   
     
         
     const filter = (reaction, user) => {
