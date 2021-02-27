@@ -7,4 +7,12 @@ Instructions:
 3. Add your desired ID of your designated ticket staff role in the const "ticketstaffID"
 4. Add your desired category you want the tickets to be in in the const "ticketcatID"
 
+NOTE:
+The code here includes a simple commandhandler and the code for the ticket command itself.
+To implement this into your bot, please run
+
+npm install discord.js
+
+in your terminal before proceeding.
+
 Feel free to use this code for your own projects, and suggest any changes!
