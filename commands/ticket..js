@@ -8,9 +8,13 @@ module.exports = {
 
     
     const author = message.author
+    const ticketstaffID = '' //Ticket staff ID here
+    const ticketcatID = '' //Ticket category ID here
 
-    if(!message.member.roles.cache.has('')) { // if a user does not have the role of {roleid}, the command will not run and message will be deleted
-        let msg = await message.channel.send('')
+
+
+    if(!message.member.roles.cache.has(ticketstaffID)) { // if a user does not have the role of {roleid}, the command will not run and message will be deleted
+        let msg = await message.channel.send('You do not have a valid ticket staff role!')
         setTimeout(function(){
             msg.delete()    
        }, 5000);
@@ -22,7 +26,7 @@ module.exports = {
     let name = message.author.username;
     const createdchannel = await message.guild.channels.create( `${name}-ticket`, {
         type: 'text',
-        parent: '' //category ID here!
+        parent: ticketcatID 
     })
     const embed = new Discord.MessageEmbed()
     .setColor('#ff0000')
