@@ -16,3 +16,6 @@ npm install discord.js
 in your terminal before proceeding.
 
 Feel free to use this code for your own projects, and suggest any changes!
+
+
+**THIS BOT USES DISCORDJS V12. ENSURE YOU ARE NOT RUNNING DISCORDJS V13 BEFORE USING THIS CODE**
